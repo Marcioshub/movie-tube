@@ -22,6 +22,9 @@ import vhs from "../images/vhs.jpg";
 import labyrinth from "../images/labyrinth.jpg";
 import ghoststories from "../images/ghoststories.jpg";
 import it from "../images/it.jpg";
+import littlenicky from "../images/little-nicky.jpg";
+import thething from "../images/the-thing.jpg";
+import fiftyshadesofgrey from "../images/fifty-shades-of-grey.jpg";
 
 function Copyright() {
   return (
@@ -280,6 +283,99 @@ export default function Home() {
                   <Button
                     component={L}
                     to={`/movie/it`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={5} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={fiftyshadesofgrey}
+                  title="fifty shades of grey"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Fifty Shades Of Grey
+                  </Typography>
+                  <Typography>
+                    Literature student Anastasia Steele's life changes forever
+                    when she meets handsome, yet tormented, billionaire
+                    Christian Grey.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/fifty-shades-of-grey`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={5} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={thething}
+                  title="the thing"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    The Thing
+                  </Typography>
+                  <Typography>
+                    A research team in Antarctica is hunted by a shape-shifting
+                    alien that assumes the appearance of its victims.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/the-thing`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={5} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={littlenicky}
+                  title="little nicky"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Little Nicky
+                  </Typography>
+                  <Typography>
+                    After two of the devil's three sons escape Hell to wreak
+                    havoc on Earth, the devil must send his third son, the
+                    mild-mannered Nicky, to bring them back before it's too
+                    late.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/little-nicky`}
                     style={{ flex: 1 }}
                     size="small"
                     color="primary"
