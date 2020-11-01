@@ -10,6 +10,9 @@ const movies = [
   "labyrinth",
   "ghost-stories",
   "it",
+  "the-thing",
+  "fifty-shades-of-grey",
+  "little-nicky",
 ];
 
 app.use(express.static(path.join(__dirname, "/client/build")));
@@ -38,7 +41,7 @@ app.get("/api/stream/:name", (req, res) => {
       break;
 
     case "donnie-darko":
-      path = path + "donnie-darko.mkv";
+      path = path + "donnie-darko.mp4";
       break;
 
     case "vhs":
@@ -53,8 +56,16 @@ app.get("/api/stream/:name", (req, res) => {
       path = path + "ghost-stories.mp4";
       break;
 
-    case "it":
-      path = path + "it.mp4";
+    case "the-thing":
+      path = path + "the-thing.mp4";
+      break;
+
+    case "fifty-shades-of-grey":
+      path = path + "fify-shades-of-grey.mp4";
+      break;
+
+    case "little-nicky":
+      path = path + "little-nicky.mp4";
       break;
 
     default:
@@ -97,4 +108,4 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "/client/build", "index.html"));
 });
 
-app.listen(5000, () => console.log("Listening on port 5000"));
+app.listen(5011, () => console.log("Listening on port 5011"));
