@@ -61,7 +61,7 @@ app.get("/api/stream/:name", (req, res) => {
       break;
 
     case "fifty-shades-of-grey":
-      path = path + "fify-shades-of-grey.mp4";
+      path = path + "fifty-shades-of-grey.mp4";
       break;
 
     case "little-nicky":
