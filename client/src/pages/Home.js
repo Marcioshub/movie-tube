@@ -25,6 +25,12 @@ import it from "../images/it.jpg";
 import littlenicky from "../images/little-nicky.jpg";
 import thething from "../images/the-thing.jpg";
 import fiftyshadesofgrey from "../images/fifty-shades-of-grey.jpg";
+import charlesmanson from "../images/charles-manson.jpg";
+import jeffreydahmer from "../images/jeffrey-dahmer.jpg";
+import johnwaynegacy from "../images/john-wayne-gacy.jpg";
+import sonofsam from "../images/son-of-sam.jpg";
+import columbinehighschool from "../images/columbine-high-school.jpg";
+import blackwidow from "../images/black-widow.jpg";
 
 function Copyright() {
   return (
@@ -293,7 +299,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item key={5} xs={12} sm={6} md={4}>
+            <Grid item key={6} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -324,7 +330,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item key={5} xs={12} sm={6} md={4}>
+            <Grid item key={7} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -354,7 +360,7 @@ export default function Home() {
               </Card>
             </Grid>
 
-            <Grid item key={5} xs={12} sm={6} md={4}>
+            <Grid item key={8} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -385,6 +391,198 @@ export default function Home() {
                 </CardActions>
               </Card>
             </Grid>
+
+            <Grid item key={9} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={charlesmanson}
+                  title="charles manson"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Charles Manson
+                  </Typography>
+                  <Typography>
+                    Known as an icon of evil, Charles Manson founded a hippie
+                    cult group known as ‘The Family’ whom he would go on to
+                    manipulate into brutally killing others on his behalf during
+                    the late 1960’s.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/charles-manson`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={10} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={blackwidow}
+                  title="black widow"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Black Widow
+                  </Typography>
+                  <Typography>
+                    On a hot night in 2002, a murder took place in Manila,
+                    Philippines. The victim was a British business man named
+                    Steven Alston Davis. His death would transform the life of
+                    his mother, Margaret Davis, forever.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/black-widow`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={11} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={jeffreydahmer}
+                  title="jeffrey dahmer"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Jeffrey Dahmer
+                  </Typography>
+                  <Typography>
+                    Attorneys, friends, other first-hand contacts and a
+                    gastronomic peer depict the appealing young gay man who
+                    became infamously known as The Milwaukee Cannibal.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/jeffrey-dahmer`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={12} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={columbinehighschool}
+                  title="columbine highschool"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Columbine Highschool
+                  </Typography>
+                  <Typography>
+                    On April 20, 1999, Dylan Klebold and Eric Harris embarked on
+                    a shooting spree at Columbine High School, Colorado, killing
+                    12 of their fellow students and a teacher before committing
+                    suicide.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/columbine-high-school`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={13} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={johnwaynegacy}
+                  title="john wayne gacy"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    John Wayne Gacy
+                  </Typography>
+                  <Typography>
+                    The sister of John Wayne Gacy reveals details of the
+                    notorious serial killer.Returning to their childhood home,
+                    she discloses events in her brother's life that may have
+                    triggered his crimes
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/john-wayne-gacy`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={14} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={sonofsam}
+                  title="son of sam"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Son of Sam
+                  </Typography>
+                  <Typography>
+                    In the mid '70s, the self-named Son of Sam killer plunged
+                    New York City in terror by randomly shooting Innocent young
+                    couples on the streets.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/son-of-sam`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            {/*****/}
           </Grid>
         </Container>
       </main>

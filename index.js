@@ -13,6 +13,12 @@ const movies = [
   "the-thing",
   "fifty-shades-of-grey",
   "little-nicky",
+  "charles-manson",
+  "jeffrey-dahmer",
+  "john-wayne-gacy",
+  "son-of-sam",
+  "columbine-high-school",
+  "black-widow",
 ];
 
 app.use(express.static(path.join(__dirname, "/client/build")));
@@ -66,6 +72,30 @@ app.get("/api/stream/:name", (req, res) => {
 
     case "little-nicky":
       path = path + "little-nicky.mp4";
+      break;
+
+    case "black-widow":
+      path = path + "black-widow.mp4";
+      break;
+
+    case "charles-manson":
+      path = path + "charles-manson.mp4";
+      break;
+
+    case "columbine-high-school":
+      path = path + "columbine-high-school.mp4";
+      break;
+
+    case "jeffrey-dahmer":
+      path = path + "jeffrey-dahmer.mp4";
+      break;
+
+    case "john-wayne-gacy":
+      path = path + "john-wayne-gacy.mp4";
+      break;
+
+    case "son-of-sam":
+      path = path + "son-of-sam.mp4";
       break;
 
     default:
