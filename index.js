@@ -19,6 +19,7 @@ const movies = [
   "son-of-sam",
   "columbine-high-school",
   "black-widow",
+  "breakthrough",
 ];
 
 app.use(express.static(path.join(__dirname, "/client/build")));
@@ -96,6 +97,10 @@ app.get("/api/stream/:name", (req, res) => {
 
     case "son-of-sam":
       path = path + "son-of-sam.mp4";
+      break;
+
+    case "breakthrough":
+      path = path + "breakthrough.mp4";
       break;
 
     default:

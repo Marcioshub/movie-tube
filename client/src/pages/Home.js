@@ -31,6 +31,7 @@ import johnwaynegacy from "../images/john-wayne-gacy.jpg";
 import sonofsam from "../images/son-of-sam.jpg";
 import columbinehighschool from "../images/columbine-high-school.jpg";
 import blackwidow from "../images/black-widow.jpg";
+import breakthrough from "../images/breakthrough.jpg";
 
 function Copyright() {
   return (
@@ -572,6 +573,37 @@ export default function Home() {
                   <Button
                     component={L}
                     to={`/movie/son-of-sam`}
+                    style={{ flex: 1 }}
+                    size="small"
+                    color="primary"
+                  >
+                    watch
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+
+            <Grid item key={3} xs={12} sm={6} md={4}>
+              <Card className={classes.card}>
+                <CardMedia
+                  className={classes.cardMedia}
+                  image={breakthrough}
+                  title="labyrinth"
+                />
+                <CardContent className={classes.cardContent}>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Break Through
+                  </Typography>
+                  <Typography>
+                    When her 14-year-old son drowns in a lake, a faithful mother
+                    prays for him to come back from the brink of death and be
+                    healed.
+                  </Typography>
+                </CardContent>
+                <CardActions style={{ display: "flex" }}>
+                  <Button
+                    component={L}
+                    to={`/movie/breakthrough`}
                     style={{ flex: 1 }}
                     size="small"
                     color="primary"
