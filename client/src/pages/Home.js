@@ -16,15 +16,10 @@ import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 
 // images
-import donniedarko from "../images/donnie-darko.jpg";
-import creepshow from "../images/creepshow.jpg";
-import vhs from "../images/vhs.jpg";
 import labyrinth from "../images/labyrinth.jpg";
 import ghoststories from "../images/ghoststories.jpg";
-import it from "../images/it.jpg";
 import littlenicky from "../images/little-nicky.jpg";
 import thething from "../images/the-thing.jpg";
-import fiftyshadesofgrey from "../images/fifty-shades-of-grey.jpg";
 import charlesmanson from "../images/charles-manson.jpg";
 import jeffreydahmer from "../images/jeffrey-dahmer.jpg";
 import johnwaynegacy from "../images/john-wayne-gacy.jpg";
@@ -114,98 +109,6 @@ export default function Home() {
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
-            <Grid item key={0} xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={donniedarko}
-                  title="donnie darko"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Donnie Darko
-                  </Typography>
-                  <Typography>
-                    A troubled teenager is plagued by visions of a man in a
-                    large rabbit suit who manipulates him to commit a series of
-                    crimes, after he narrowly escapes a bizarre accident.
-                  </Typography>
-                </CardContent>
-                <CardActions style={{ display: "flex" }}>
-                  <Button
-                    component={L}
-                    to={`/movie/donnie-darko`}
-                    style={{ flex: 1 }}
-                    size="small"
-                    color="primary"
-                  >
-                    watch
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item key={1} xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={creepshow}
-                  title="creepshow"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Creepshow
-                  </Typography>
-                  <Typography>
-                    An anthology which tells five terrifying tales based on the
-                    E.C. horror comic books of the 1950s.
-                  </Typography>
-                </CardContent>
-                <CardActions style={{ display: "flex" }}>
-                  <Button
-                    component={L}
-                    to={`/movie/creepshow`}
-                    style={{ flex: 1 }}
-                    size="small"
-                    color="primary"
-                  >
-                    watch
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item key={2} xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={vhs}
-                  title="vhs"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    VHS
-                  </Typography>
-                  <Typography>
-                    When a group of misfits are hired by an unknown third party
-                    to burglarize a desolate house and acquire a rare VHS tape,
-                    they discover more found footage than they bargained for.
-                  </Typography>
-                </CardContent>
-                <CardActions style={{ display: "flex" }}>
-                  <Button
-                    component={L}
-                    to={`/movie/vhs`}
-                    style={{ flex: 1 }}
-                    size="small"
-                    color="primary"
-                  >
-                    watch
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
             <Grid item key={3} xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
@@ -258,69 +161,6 @@ export default function Home() {
                   <Button
                     component={L}
                     to={`/movie/ghost-stories`}
-                    style={{ flex: 1 }}
-                    size="small"
-                    color="primary"
-                  >
-                    watch
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item key={5} xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={it}
-                  title="it"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    IT
-                  </Typography>
-                  <Typography>
-                    In 1960, seven pre-teen outcasts fight an evil demon who
-                    poses as a child-killing clown. Thirty years later, they
-                    reunite to stop the demon once and for all when it returns
-                    to their hometown.
-                  </Typography>
-                </CardContent>
-                <CardActions style={{ display: "flex" }}>
-                  <Button
-                    component={L}
-                    to={`/movie/it`}
-                    style={{ flex: 1 }}
-                    size="small"
-                    color="primary"
-                  >
-                    watch
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item key={6} xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={fiftyshadesofgrey}
-                  title="fifty shades of grey"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    Fifty Shades Of Grey
-                  </Typography>
-                  <Typography>
-                    Literature student Anastasia Steele's life changes forever
-                    when she meets handsome, yet tormented, billionaire
-                    Christian Grey.
-                  </Typography>
-                </CardContent>
-                <CardActions style={{ display: "flex" }}>
-                  <Button
-                    component={L}
-                    to={`/movie/fifty-shades-of-grey`}
                     style={{ flex: 1 }}
                     size="small"
                     color="primary"

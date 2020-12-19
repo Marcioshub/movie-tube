@@ -2,16 +2,12 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const app = express();
+require("dotenv").config();
 
 const movies = [
-  "creepshow",
-  "donnie-darko",
-  "vhs",
   "labyrinth",
   "ghost-stories",
-  "it",
   "the-thing",
-  "fifty-shades-of-grey",
   "little-nicky",
   "charles-manson",
   "jeffrey-dahmer",
@@ -43,18 +39,6 @@ app.get("/api/stream/:name", (req, res) => {
   let path = "./videos/";
 
   switch (req.params.name) {
-    case "creepshow":
-      path = path + "creepshow.mp4";
-      break;
-
-    case "donnie-darko":
-      path = path + "donnie-darko.mp4";
-      break;
-
-    case "vhs":
-      path = path + "vhs.mp4";
-      break;
-
     case "labyrinth":
       path = path + "labyrinth.mp4";
       break;
@@ -65,10 +49,6 @@ app.get("/api/stream/:name", (req, res) => {
 
     case "the-thing":
       path = path + "the-thing.mp4";
-      break;
-
-    case "fifty-shades-of-grey":
-      path = path + "fifty-shades-of-grey.mp4";
       break;
 
     case "little-nicky":
@@ -104,11 +84,10 @@ app.get("/api/stream/:name", (req, res) => {
       break;
 
     default:
-      path = path + "it.mp4";
+      path = path + "labyrinth.mp4";
       break;
   }
 
-  //const path = `./videos/donnie-darko.mkv`;
   const stat = fs.statSync(path);
   const fileSize = stat.size;
   const range = req.headers.range;
@@ -143,4 +122,6 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "/client/build", "index.html"));
 });
 
-app.listen(5011, () => console.log("Listening on port 5011"));
+app.listen(process.env.PORT, () =>
+  console.log(`Listening on port ${process.env.PORT}`)
+);
